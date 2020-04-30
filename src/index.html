@@ -2,12 +2,418 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
+    <title>Zippy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is Photoshop's version of Lorem Ipsum.">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
+    <header class="page-header" id="home">
+        <div class="wrapper">
+            <div class="page-header__top">
+                <h1 class="page-header__logo">Zippy</h1>
+                <nav class="page-header__nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="#home">Home</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#projects">Projects</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#pricing">Pricing</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#team">Team</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#blog">Blog</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="page-header__title">
+                One page promising to  fill all your needs!
+            </div>
+            <div class="page-header__desc">
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+            </div>
+        </div>
+    </header>
+    <section class="promo">
+        <div class="wrapper">
+            <h2 class="promo__title title">Welcome to Zippy</h2>
+            <div class="promo__desc">
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                sollicitudin, lorem quis bibendum auctor.
+            </div>
+            <ul class="promo__list about-list">
+                <li class="about-list__item bell">
+                    <h3 class="about-list__title">Lorem ipsum</h3>
+                    <p class="about-list__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        placerat pharetra ut vitae felis.
+                    </p>
+                    <a class="about-list__link btn" href="#">Learn more</a>
+                </li>
+                <li class="about-list__item envelope">
+                    <h3 class="about-list__title">Dolor sit</h3>
+                    <p class="about-list__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        placerat pharetra ut vitae felis.
+                    </p>
+                    <a class="about-list__link btn" href="#">Learn more</a>
+                </li>
+                <li class="about-list__item drawer">
+                    <h3 class="about-list__title">Consecteture</h3>
+                    <p class="about-list__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        placerat pharetra ut vitae felis.
+                    </p>
+                    <a class="about-list__link btn" href="">Learn more</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="projects__title title">Projects</h2>
+        <ul class="projects__list">
+            <li class="projects__item project">
+                <img class="project__image" src="img/project-1.jpg" alt="Project-1">
+                <div class="project__desc">
+                    <h3 class="project__title">Project name</h3>
+                    <p class="project__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        placerat pharetra ut vitae felis.
+                    </p>
+                    <a class="project__link btn" href="#">Launch case study</a>
+                </div>
+            </li>
+            <li class="projects__item project">
+                <img class="project__image" src="img/project-2.jpg" alt="Project-2">
+                <div class="project__desc">
+                    <h3 class="project__title">Project name</h3>
+                    <p class="project__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        placerat pharetra ut vitae felis.
+                    </p>
+                    <a class="project__link btn" href="#">Launch case study</a>
+                </div>
+            </li>
+            <li class="projects__item project">
+                <img class="project__image" src="img/project-3.jpg" alt="Project-3">
+                <div class="project__desc">
+                    <h3 class="project__title">Project name</h3>
+                    <p class="project__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        placerat pharetra ut vitae felis.
+                    </p>
+                    <a class="project__link btn" href="#">Launch case study</a>
+                </div>
+            </li>
+            <li class="projects__item project">
+                <img class="project__image" src="img/project-4.jpg" alt="Project-4">
+                <div class="project__desc">
+                    <h3 class="project__title">Project name</h3>
+                    <p class="project__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        placerat pharetra ut vitae felis.
+                    </p>
+                    <a class="project__link btn" href="#">Launch case study</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="pricing" id="pricing">
+        <div class="wrapper">
+            <h2 class="pricing__title title">Pricing Table</h2>
+            <ul class="pricing__list">
+                <li class="pricing__item price pricing__item--first">
+                    <h3 class="price__title">Standard plan</h3>
+                    <span class="price__price">Free</span>
+                    <ul class="price__feauteres">
+                        <li class="price__feauteres-item">2 GB Available</li>
+                        <li class="price__feauteres-item">15 max. contacts</li>
+                        <li class="price__feauteres-item">30 Messages/month</li>
+                        <li class="price__feauteres-item">Disgusting Ads</li>
+                    </ul>
+                    <a href="" class="price__link btn">Buy</a></li>
+                <li class="pricing__item price pricing__item--second">
+                    <h3 class="price__title">Business plan</h3>
+                    <span class="price__price">14$/month</span>
+                    <ul class="price__feauteres">
+                        <li class="price__feauteres-item">10 GB Available</li>
+                        <li class="price__feauteres-item">75 max. contacts</li>
+                        <li class="price__feauteres-item">120 Messages/month</li>
+                        <li class="price__feauteres-item">Ads Free</li>
+                    </ul>
+                    <a href="" class="price__link btn">Buy</a></li>
+                <li class="pricing__item price pricing__item--third">
+                    <h3 class="price__title">Premium plan</h3>
+                    <span class="price__price">19$/month</span>
+                    <ul class="price__feauteres">
+                        <li class="price__feauteres-item">100 GB Available</li>
+                        <li class="price__feauteres-item">Unlimited Contacts</li>
+                        <li class="price__feauteres-item">Unlimited Messages/month</li>
+                        <li class="price__feauteres-item">Ads Free</li>
+                    </ul>
+                    <a href="" class="price__link btn">Buy</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="team" id="team">
+        <div class="wrapper">
+            <h2 class="team__title title">Zippy Team</h2>
+            <ul class="team__list">
+                <li class="team__item member">
+                    <div class="member__container">
+                        <img class="member__image" src="img/sara-johnson.jpg" alt="Sara Johnson">
+                        <ul class="member__social">
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--facebook">facebook</a>
+                            </li>
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--twitter">twitter</a>
+                            </li>
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--google">google</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="member__name">Sara Johnson</span>
+                    <span class="member__position">Creative Head</span>
+                </li>
+                <li class="team__item member">
+                    <div class="member__container">
+                        <img class="member__image" src="img/matt-alex.jpg" alt="Matt Alex">
+                        <ul class="member__social">
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--facebook">facebook</a>
+                            </li>
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--twitter">twitter</a>
+                            </li>
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--google">google</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="member__name">Matt Alex</span>
+                    <span class="member__position">Art Director</span>
+                </li>
+                <li class="team__item member">
+                    <div class="member__container">
+                        <img class="member__image" src="img/chris-philips.jpg" alt="Chris Philips">
+                        <ul class="member__social">
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--facebook">facebook</a>
+                            </li>
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--twitter">twitter</a>
+                            </li>
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--google">google</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="member__name">Chris Philips</span>
+                    <span class="member__position">Senior Designer</span>
+                </li>
+                <li class="team__item member">
+                    <div class="member__container">
+                        <img class="member__image" src="img/jimmy-smith.jpg" alt="Jimmy Smith">
+                        <ul class="member__social">
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--facebook">facebook</a>
+                            </li>
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--twitter">twitter</a>
+                            </li>
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--google">google</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="member__name">Jimmy Smith</span>
+                    <span class="member__position">Marketing Manager</span>
+                </li>
+                <li class="team__item member">
+                    <div class="member__container">
+                        <img class="member__image" src="img/aliza.jpg" alt="Aliza">
+                        <ul class="member__social">
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--facebook">facebook</a>
+                            </li>
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--twitter">twitter</a>
+                            </li>
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--google">google</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="member__name">Aliza</span>
+                    <span class="member__position">Seo Monster</span>
+                </li>
+                <li class="team__item member">
+                    <div class="member__container">
+                        <img class="member__image" src="img/celien-john.jpg" alt="Celien John">
+                        <ul class="member__social">
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--facebook">facebook</a>
+                            </li>
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--twitter">twitter</a>
+                            </li>
+                            <li class="member__social-item">
+                                <a href="#" class="member__link member__link--google">google</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="member__name">Celien John</span>
+                    <span class="member__position">Senior Designer</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="wrapper">
+            <h2 class="gallery__title title">Life in Zippy</h2>
+            <img class="gallery__image" src="img/gallery-1_b.jpg" alt="Gallery-1">
+            <div class="gallery__container">
+                <button class="gallery__button gallery__button--prev" type="button">Prev</button>
+                <ul class="gallery__items">
+                    <li class="gallery__item">
+                        <a class="gallery__item-link" href="">
+                            <img class="gallery__item-image gallery__item-image--active" src="img/gallery-1_s.jpg" alt="Gallery-1">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a class="gallery__item-link" href="">
+                            <img class="gallery__item-image" src="img/gallery-2_s.jpg" alt="Gallery-2">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a class="gallery__item-link" href="">
+                            <img class="gallery__item-image" src="img/gallery-3_s.jpg" alt="Gallery-3">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a class="gallery__item-link" href="">
+                            <img class="gallery__item-image" src="img/gallery-4_s.jpg" alt="Gallery-4">
+                        </a>
+                    </li>
+                    <li class="gallery__item">
+                        <a class="gallery__item-link" href="">
+                            <img class="gallery__item-image" src="img/gallery-5_s.jpg" alt="Gallery-5">
+                        </a>
+                    </li>
+                </ul>
+                <button class="gallery__button gallery__button--next" type="button">Next</button>
+            </div>
+        </div>
+    </section>
+    <section class="signup">
+        <h2 class="signup__title title">Newsletter Signup</h2>
+        <form class="signup__form" action="" method="post">
+            <label for="signup" class="signup__label">E-mail</label>
+            <input class="signup__input" id="signup" type="text" placeholder="abc@example.com" name="email">
+            <button class="signup__button btn" type="submit">Sign up</button>
+        </form>
+    </section>
+    <section class="blog" id="blog">
+        <div class="wrapper">
+            <h2 class="blog__title title">Blog</h2>
+            <ul class="blog__list">
+                <li class="blog__item article">
+                    <img class="article__image" src="img/blog-1.jpg" alt="Blog-1">
+                    <h3 class="article__title">Lorem ipsum dolor sit amet</h3>
+                    <time class="article__date">15 Jan, 2015</time>
+                    <p class="article__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        placerat pharetra ut vitae felis.
+                    </p>
+                    <a class="article__link btn" href="">Read more</a>
+                </li>
+                <li class="blog__item article">
+                    <img class="article__image" src="img/blog-2.jpg" alt="Blog-2">
+                    <h3 class="article__title">Lorem ipsum dolor sit amet</h3>
+                    <time class="article__date">15 Jan, 2015</time>
+                    <p class="article__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        placerat pharetra ut vitae felis.
+                    </p>
+                    <a href="" class="article__link btn">Read more</a>
+                </li>
+                <li class="blog__item article">
+                    <img class="article__image" src="img/blog-3.jpg" alt="Blog-3">
+                    <h3 class="article__title">Lorem ipsum dolor sit amet</h3>
+                    <time class="article__date">15 Jan, 2015</time>
+                    <p class="article__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel odio vel felis
+                        placerat pharetra ut vitae felis.
+                    </p>
+                    <a class="article__link btn" href="">Read more</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact__column contact__column--map">
+            <img class="contact__map" src="img/map.jpg" alt="Map">
+        </div>
+        <div class="contact__column contact__column--form">
+            <h2 class="contact__title title">Contact</h2>
+            <form class="contact__form" action="" method="post">
+                <label for="name" class="contact__label">Name</label>
+                <input class="contact__input" id="name" type="text" name="name">
+                <label for="email" class="contact__label">Email address</label>
+                <input class="contact__input" id="email" type="text" name="email">
+                <label for="subject" class="contact__label">Subject</label>
+                <input class="contact__input" id="subject" type="text" name="subject">
+                <label for="message" class="contact__label">Message</label>
+                <textarea class="contact__textarea" id="message" name="message" rows="4"></textarea>
+                <button class="contact__button btn">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer class="page-footer">
+        <div class="wrapper">
+            <div class="page-footer__container">
+                <div class="page-footer__column">
+                    <h3 class="page-footer__title">Office Address</h3>
+                    <p class="page-footer__text">
+                        Lorem Ipsum dolor, 234<br>
+                        1200 Consecture<br>
+                        Adipsching
+                    </p>
+                </div>
+                <div class="page-footer__column">
+                    <h3 class="page-footer__title">Follow us</h3>
+                    <ul class="page-footer__social">
+                        <li class="page-footer__social-item">
+                            <a class="page-footer__social-link page-footer__social-link--behance" href="#">Behance</a>
+                        </li>
+                        <li class="page-footer__social-item">
+                            <a class="page-footer__social-link page-footer__social-link--twitter" href="#">Twitter</a>
+                        </li>
+                        <li class="page-footer__social-item">
+                            <a class="page-footer__social-link page-footer__social-link--linkedin" href="#">Linkedin</a>
+                        </li>
+                        <li class="page-footer__social-item">
+                            <a class="page-footer__social-link page-footer__social-link--facebook" href="#">Facebook</a>
+                        </li>
+                        <li class="page-footer__social-item">
+                            <a class="page-footer__social-link page-footer__social-link--google" href="#">Google</a>
+                        </li>
+                        <li class="page-footer__social-item">
+                            <a class="page-footer__social-link page-footer__social-link--tumbir" href="#">Tumbir</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-footer__column">
+                    <h3 class="page-footer__title">Contact us</h3>
+                    <p class="page-footer__text">
+                        + 123 456 789<br>
+                        zippy@skype<br>
+                        enquiry@zippy.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
