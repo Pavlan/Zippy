@@ -13,6 +13,12 @@
 body {
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 700;
+
+  &.lock {
+    @media screen and (max-width: 767px) {
+      overflow: hidden;
+    }
+  }
 }
 
 img {
@@ -45,7 +51,14 @@ img {
     background: #2c415e;
 
     @media screen and (max-width: 767px) {
+      display: block;
+      padding: 17px 30px 13px 30px;
       min-height: 40px;
+      transition: all 0.3s ease 0s;
+
+      &.active {
+        min-height: 100vh;
+      }
     }
   }
 
@@ -62,6 +75,63 @@ img {
 
   &__nav {
     .col();
+
+    &-button {
+      display: none;
+
+      @media screen and (max-width: 767px) {
+        display: block;
+        width: 30px;
+        height: 22px;
+        position: absolute;
+        top: 22px;
+        right: 37.5px;
+        z-index: 100;
+        cursor: pointer;
+
+        &:before, &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: @color-white;
+          transition: all 0.3s ease 0s;
+        }
+
+        &:before {
+          top: 0;
+        }
+
+        &:after {
+          bottom: 0;
+        }
+
+        span {
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          top: 10px;
+          background-color: @color-white;
+          transition: all 0.3s ease 0s;
+        }
+        &.active {
+
+          &:before {
+            transform: rotate(45deg);
+            top: 10px;
+          }
+
+          &:after {
+            transform: rotate(-45deg);
+            top: 10px;
+          }
+
+          span {
+            transform: scale(0);
+          }
+        }
+      }
+    }
   }
 
   &__title {
@@ -86,6 +156,20 @@ img {
     .row-flex();
     list-style: none;
     padding: 0;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -500%;
+      transition: all 0.3s ease 0s;
+
+      &.active {
+        top: 50px;
+      }
+    }
   }
 
   &__item {
@@ -93,15 +177,16 @@ img {
     font-size: 10px;
     text-transform: uppercase;
     padding-left: 20px;
+
+    @media screen and (max-width: 767px) {
+      padding: 15px 0;
+      font-size: 18px;
+    }
   }
 
   &__link {
     color: @color-white;
     text-decoration: none;
-
-    &--active {
-      color: @color-yellow;
-    }
   }
 }
 
