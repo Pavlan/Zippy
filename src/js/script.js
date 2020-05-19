@@ -7,7 +7,7 @@ window.onload = function () {
     let navLink = document.querySelectorAll('.main-nav__link');
 
     navButton.addEventListener('click', function () {
-        navButton.classList.toggle('active');
+        this.classList.toggle('active');
         header.classList.toggle('active');
         navList.classList.toggle('active');
         body.classList.toggle('lock');
